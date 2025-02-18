@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: Silver_layer  # This must match the source() reference exactly
+    database: CUSTOMER
+    schema: SILVER_LAYER   # Ensure this matches your Snowflake schema
+    tables:
+      - name: fact_orders
+      - name: dim_product
+      - name: dim_customer

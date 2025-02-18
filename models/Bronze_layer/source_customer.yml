@@ -1,0 +1,26 @@
+sources:
+  - name: bronze_customer
+    schema: bronze_layer
+    description: Raw data loaded from the csv containing customer dimension
+
+    tables:
+      - name: customer_details
+        columns:
+          - name: customer_id
+            data_type: number
+          - name: customer_name
+            data_type: varchar
+          - name: gender
+            data_type: varchar
+          - name: birth_date
+            data_type: varchar
+          - name: email_address
+            data_type: varchar
+          - name: country
+            data_type: varchar
+          - name: zip_code
+            data_type: varchar
+          - name: street
+            data_type: varchar
+          - name: street_number
+            data_type: varchar
